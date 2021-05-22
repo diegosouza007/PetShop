@@ -4,7 +4,10 @@ Neste pequeno projeto, irei desenvolver um site fictício para um petshop local.
 
 # Tecnologias 
 
-HTML e CSS
+<p float="left">
+  <img src="./assets/img/icons-html-5.svg" alt="HTML">
+  <img src="./assets/img/icons-css3.svg" alt="CSS">
+</p>
 
 # Project preview
 
