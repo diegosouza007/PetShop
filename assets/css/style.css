@@ -5,10 +5,12 @@ body {
     background-color: #ffd60a;
 }
 
-#whatsapp {
-    margin: 10px;
+.whatsapp__container {
+    margin: 30px;
+    position: absolute;
     position: fixed;
-    float: right;
+    right: 0px;
+    bottom: 0px;
 }
 
 #menu {
@@ -19,10 +21,6 @@ body {
     margin-top: 10px;
     margin: auto;
     font-size: 1.2rem;
-}
-
-#menu img {
-    margin: 10px;
 }
 
 #menu a {
