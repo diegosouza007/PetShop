@@ -1,6 +1,9 @@
-body {
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #Fdd935;
 }
@@ -9,7 +12,12 @@ div {
     z-index: 100;
 }
 
-.whatsapp__container {
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+#whatsapp-icon {
     margin: 30px;
     position: relative;
     position: fixed;
@@ -55,12 +63,7 @@ div {
     padding-bottom: 7px;
 }
 
-section {
-    height: 100vh;
-    width: 100%;
-}
-
-.welcome {
+#home {
     position: relative;
     margin-top: auto;
     background-color: #69ac4f;
@@ -69,7 +72,27 @@ section {
     overflow: hidden;
 }
 
-.home__text {
+#home img {
+    position: absolute;
+    bottom: 0px;
+    width: 650px;
+    width: auto;
+    float: right;
+    height: 95%;
+}
+
+.home__title {
+    margin-top: 25px;
+}
+
+.home__title h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 6px;
+    margin-right: 20px;
+}
+
+.home__message {
     text-align: left;
     width: 500px;
     max-width: 500px;
@@ -79,35 +102,31 @@ section {
     font-size: 1rem;
 }
 
-.welcome h1 {
-    /* margin: 0; */
-    padding: 0;
-    font-size: 3rem;
-    margin-bottom: 6px;
-    margin-right: 20px;
-}
-
-.welcome h2 {
-    margin: 0;
-    margin-right: 20px;
-}
-
-.welcome_msg {
-    width: 600px;
-    width: 100%;
-}
-
-.welcome img {
-    position: absolute;
-    bottom: 0px;
-    margin: 0;
-    padding: 0;
-    width: 600px;
-    float: right;
-}
-
 #products {
     background-color: #f5bb00;
+}
+
+#products h1 {
+    position: relative;
+    text-align: center;
+    top: 30px;
+    color: black;
+}
+
+#frame {
+    display: flex;
+    top: 70px;
+    position: relative;
+    border: 1px black solid;
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+}
+
+.box {
+    border: crimson 2px solid;
+    height: 20vh;
+    width: 20vw;
 }
 
 #services {
@@ -115,7 +134,32 @@ section {
 }
 
 #about {
+    /* position: relative; */
     background-color: #d76a03;
+}
+
+#about h1,
+p {
+    color: white;
+    text-align: center;
+}
+
+#about h1 {
+    position: relative;
+    font-size: 2rem;
+    top: 30px;
+}
+
+#about p {
+    width: 400px;
+    float: right;
+    margin-top: 120px;
+    /* margin-right: 50px; */
+    font-size: 1rem;
+}
+
+#about img {
+    bottom: 20px;
 }
 
 #contact {
