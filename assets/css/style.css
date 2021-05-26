@@ -102,6 +102,11 @@ section {
     font-size: 1rem;
 }
 
+.home__message p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 #products {
     background-color: #f5bb00;
 }
@@ -110,7 +115,7 @@ section {
     position: relative;
     text-align: center;
     top: 30px;
-    color: black;
+    color: #404040;
 }
 
 #frame {
@@ -136,8 +141,9 @@ section {
 #about {
     background-color: #d76a03;
     text-align: center;
-    /* overflow: auto; */
     box-sizing: border-box;
+    height: auto;
+    padding: 30px;
 }
 
 #about h1,
@@ -160,8 +166,9 @@ p {
 
 #about img {
     vertical-align: middle;
-    max-width: 500px;
+    max-width: 450px;
     width: 100%;
+    margin: 15px;
 }
 
 .about__text {
@@ -193,5 +200,29 @@ footer {
     bottom: 0px;
     width: 100%;
     height: 30vh;
-    background: #404040;
+    background: #323232;
+    height: auto;
+}
+
+#contact-info-text {
+    display: inline-block;
+    max-width: 450px;
+    width: 100%;
+}
+
+#dogs-footer-image {
+    display: inline;
+    position: relative;
+    float: right;
+    width: 400px;
+}
+
+#copyright {
+    color: white;
+    text-align: center;
+    position: absolute;
+    margin-bottom: 15px;
+    bottom: 0px;
+    left: 30%;
+    right: 30%;
 }
