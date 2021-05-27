@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    appearance: none;
+    border: none;
+    list-style: none;
+    /* text-decoration: none; */
 }
 
 body {
@@ -181,6 +185,7 @@ p {
     position: relative;
     background-color: #bf3100;
     box-sizing: border-box;
+    height: auto;
 }
 
 #contact h1,
@@ -195,22 +200,48 @@ p {
     text-align: center;
 }
 
+form {
+    box-sizing: border-box;
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: auto;
+}
+
+input {
+    /* box-sizing: border-box; */
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
 footer {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 30vh;
+    height: 100px;
     background: #323232;
     height: auto;
 }
 
-#contact-info-text {
+ul {
     display: inline-block;
-    max-width: 450px;
-    width: 100%;
+    width: 200px;
 }
 
-#dogs-footer-image {
+#contact-info-text {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+    margin: 15px;
+    /* vertical-align: center; */
+}
+
+#contact-info #dogs-footer-image {
     display: inline;
     position: relative;
     float: right;
@@ -225,4 +256,22 @@ footer {
     bottom: 0px;
     left: 30%;
     right: 30%;
+}
+
+#social-media {
+    position: absolute;
+    bottom: 0px;
+    margin: 15px;
+}
+
+#main-menu-options a {
+    color: white;
+}
+
+#main-menu-options ul {
+    margin-bottom: 2.5px;
+}
+
+#social-media img:hover {
+    width: 32px;
 }
