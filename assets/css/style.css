@@ -4,16 +4,11 @@
     appearance: none;
     border: none;
     list-style: none;
-    /* text-decoration: none; */
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #Fdd935;
-}
-
-div {
-    z-index: 100;
 }
 
 section {
@@ -27,6 +22,7 @@ section {
     position: fixed;
     right: 0px;
     bottom: 0px;
+    z-index: 100;
 }
 
 #menu {
@@ -118,9 +114,7 @@ section {
 }
 
 #products h1 {
-    /* position: relative; */
     text-align: center;
-    /* top: 30px; */
     color: #404040;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -129,7 +123,6 @@ section {
 #products span {
     border-bottom: 5px solid #404040;
     border-radius: 5px;
-    /* padding-bottom: 10px; */
 }
 
 .flexbox {
@@ -158,7 +151,6 @@ section {
 .flexbox h4 {
     border-radius: 3px;
     color: white;
-    /* margin-bottom: 5px; */
     padding: 10px;
     background: #000;
 }
@@ -185,11 +177,49 @@ section {
 }
 
 #services {
+    position: relative;
     background-color: #ec9f05;
+    text-align: center;
+}
+
+#services h1 {
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#services span {
+    border-bottom: 5px solid white;
+    border-radius: 5px;
 }
 
 .flexbox-services {
     display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 780px;
+    margin: 0 auto;
+}
+
+.flexbox-services>div {
+    flex: 1 1 200px;
+}
+
+.flexbox-services img {
+    border: 8px solid #d76a03;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+}
+
+#dog-over-div img {
+    position: absolute;
+    max-width: 300px;
+    bottom: -157px;
+    left: 40px;
 }
 
 #about {
@@ -200,14 +230,17 @@ section {
     padding: 30px;
 }
 
+#about span {
+    border-bottom: 5px solid white;
+    border-radius: 5px;
+}
+
 #about h1,
 p {
     color: white;
 }
 
 #about h1 {
-    font-size: 2rem;
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -238,13 +271,17 @@ p {
     height: auto;
 }
 
+#contact span:first-child {
+    border-bottom: 5px solid white;
+    border-radius: 5px;
+}
+
 #contact h1,
 p {
     color: white;
 }
 
 #contact h1 {
-    font-size: 2rem;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -254,28 +291,55 @@ form {
     box-sizing: border-box;
     max-width: 500px;
     margin: auto;
+    margin-bottom: 30px;
     padding-bottom: auto;
 }
 
 input {
-    /* box-sizing: border-box; */
     width: 100%;
     margin-bottom: 5px;
     padding: 20px;
 }
 
+#sent-button {
+    margin-top: 10px;
+    max-width: 35%;
+    font-weight: bold;
+    border: 1px solid #323232;
+    color: #323232;
+}
+
+#clear-button {
+    max-width: 35%;
+    font-weight: bold;
+    border: 1px solid #323232;
+    color: #323232;
+}
+
+#sent-button:hover {
+    color: white;
+    background: #323232;
+    border: 1px solid white;
+}
+
+#clear-button:hover {
+    color: white;
+    background: #323232;
+    border: 1px solid white;
+}
+
 textarea {
     width: 100%;
     resize: none;
+    padding: 20px;
 }
 
 footer {
-    position: absolute;
-    bottom: 0px;
+    position: relative;
     width: 100%;
-    height: 100px;
     background: #323232;
-    height: auto;
+    height: 230px;
+    max-height: auto;
 }
 
 ul {
@@ -287,15 +351,15 @@ ul {
     display: inline-block;
     max-width: 400px;
     width: 100%;
-    margin: 15px;
-    /* vertical-align: center; */
+    margin: 25px;
 }
 
-#contact-info #dogs-footer-image {
-    display: inline;
-    position: relative;
-    float: right;
-    width: 400px;
+#dogs-footer-image {
+    position: absolute;
+    max-width: 450px;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
 }
 
 #copyright {
@@ -311,7 +375,7 @@ ul {
 #social-media {
     position: absolute;
     bottom: 0px;
-    margin: 15px;
+    margin: 25px;
 }
 
 #main-menu-options a {
