@@ -113,23 +113,69 @@ section {
 
 #products {
     background-color: #f5bb00;
+    height: auto;
+    padding-bottom: 40px;
 }
 
 #products h1 {
-    position: relative;
+    /* position: relative; */
     text-align: center;
-    top: 30px;
+    /* top: 30px; */
     color: #404040;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
-#frame {
+#products span {
+    border-bottom: 5px solid #404040;
+    border-radius: 5px;
+    /* padding-bottom: 10px; */
+}
+
+.flexbox {
     display: flex;
-    top: 70px;
-    position: relative;
-    border: 1px black solid;
-    height: 80vh;
-    width: 80vw;
-    margin: auto;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.flexbox p {
+    color: #606060;
+    margin-bottom: 10px;
+}
+
+.flexbox p:last-child {
+    padding: 10px;
+}
+
+.flexbox h2 {
+    color: #353535;
+    margin-bottom: 5px;
+}
+
+.flexbox h4 {
+    border-radius: 3px;
+    color: white;
+    /* margin-bottom: 5px; */
+    padding: 10px;
+    background: #000;
+}
+
+.flexbox>div {
+    flex: 0 1 250px;
+    text-align: center;
+    border: 1px solid #404040;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 4px 4px #3232326b;
+    margin: 10px;
+}
+
+.flexbox img {
+    max-width: 100%;
+    display: block;
 }
 
 .box {
@@ -140,6 +186,10 @@ section {
 
 #services {
     background-color: #ec9f05;
+}
+
+.flexbox-services {
+    display: flex;
 }
 
 #about {
