@@ -15,4 +15,6 @@ Como o site é referente a uma empresa que trabalha no ramo de PetShop, a ideia 
 
 ## Preview
 
-<em>Em desenvolvimento...</em>
+<img src="./assets/img/website-preview.webp" width="600px" alt="preview">
+
+Live Demo: https://diegosouza007.github.io/PetShop/
