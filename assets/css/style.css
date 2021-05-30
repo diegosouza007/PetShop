@@ -16,6 +16,9 @@ section {
     width: 100%;
 }
 
+
+/* WhatsApp float icon */
+
 #whatsapp-icon {
     margin: 30px;
     position: relative;
@@ -25,13 +28,16 @@ section {
     z-index: 100;
 }
 
+
+/* Menu options */
+
 #menu {
     display: flex;
     background-color: #Fdd935;
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     font-size: 1.2rem;
 }
 
@@ -49,6 +55,7 @@ section {
     display: flex;
     list-style: none;
     align-items: center;
+    width: auto;
 }
 
 #menu li {
@@ -63,6 +70,9 @@ section {
     padding-bottom: 7px;
 }
 
+
+/* Home page */
+
 #home {
     position: relative;
     margin-top: auto;
@@ -70,12 +80,13 @@ section {
     color: white;
     text-align: center;
     overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #home img {
     position: absolute;
     bottom: 0px;
-    width: 650px;
     width: auto;
     float: right;
     height: 95%;
@@ -106,6 +117,9 @@ section {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+
+/* Section of products */
 
 #products {
     background-color: #f5bb00;
@@ -170,11 +184,8 @@ section {
     display: block;
 }
 
-.box {
-    border: crimson 2px solid;
-    height: 20vh;
-    width: 20vw;
-}
+
+/* Section of services */
 
 #services {
     position: relative;
@@ -222,12 +233,18 @@ section {
     margin-bottom: 25px;
 }
 
+
+/* Image of the dog over the section services/about */
+
 #dog-over-div img {
     position: absolute;
     max-width: 300px;
     bottom: -157px;
     left: 40px;
 }
+
+
+/* About section */
 
 #about {
     background-color: #d76a03;
@@ -270,6 +287,9 @@ p {
     display: inline-block;
     vertical-align: middle;
 }
+
+
+/* Contact section page */
 
 #contact {
     position: relative;
@@ -396,4 +416,47 @@ ul {
 
 #social-media img:hover {
     width: 32px;
+}
+
+@media screen and (max-width: 936px) {
+    #home img {
+        position: static;
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .home__message {
+        text-align: center;
+        margin: auto;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    #home img {
+        position: static;
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #home img {
+        position: static;
+        max-width: 480px;
+    }
+    .home__title h1 {
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 6px;
+        margin-right: 20px;
+    }
+    .home__title h2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    #home img {
+        max-width: 420px;
+    }
 }
