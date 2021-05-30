@@ -180,6 +180,8 @@ section {
     position: relative;
     background-color: #ec9f05;
     text-align: center;
+    height: auto;
+    padding-bottom: 240px;
 }
 
 #services h1 {
@@ -196,23 +198,28 @@ section {
 
 .flexbox-services {
     display: flex;
+    justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    width: 780px;
+    max-width: 50%;
     margin: 0 auto;
 }
 
 .flexbox-services>div {
-    flex: 1 1 200px;
+    width: 250px;
 }
 
 .flexbox-services img {
     border: 8px solid #d76a03;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     max-width: 100%;
+}
+
+.flexbox-services p {
+    margin-bottom: 25px;
 }
 
 #dog-over-div img {
@@ -290,6 +297,7 @@ p {
 form {
     box-sizing: border-box;
     max-width: 500px;
+    width: 100%;
     margin: auto;
     margin-bottom: 30px;
     padding-bottom: auto;
