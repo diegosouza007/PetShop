@@ -16,6 +16,10 @@ section {
     width: 100%;
 }
 
+#menu span {
+    display: none;
+}
+
 
 /* WhatsApp float icon */
 
@@ -32,6 +36,7 @@ section {
 /* Menu options */
 
 #menu {
+    /* box-sizing: border-box; */
     display: flex;
     background-color: #Fdd935;
     justify-content: space-between;
@@ -80,8 +85,6 @@ section {
     color: white;
     text-align: center;
     overflow: hidden;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 #home img {
@@ -142,6 +145,7 @@ section {
 .flexbox {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-content: center;
     align-items: center;
     max-width: 80vw;
@@ -234,7 +238,7 @@ section {
 }
 
 
-/* Image of the dog over the section services/about */
+/* Picture of the dog over the section services/about */
 
 #dog-over-div img {
     position: absolute;
@@ -294,7 +298,7 @@ p {
 #contact {
     position: relative;
     background-color: #bf3100;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     height: auto;
 }
 
@@ -315,17 +319,25 @@ p {
 }
 
 form {
-    box-sizing: border-box;
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 30px;
+    padding: 30px;
     padding-bottom: auto;
 }
 
 input {
+    box-sizing: border-box;
     width: 100%;
     margin-bottom: 5px;
+    padding: 20px;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
     padding: 20px;
 }
 
@@ -354,12 +366,6 @@ input {
     color: white;
     background: #323232;
     border: 1px solid white;
-}
-
-textarea {
-    width: 100%;
-    resize: none;
-    padding: 20px;
 }
 
 footer {
@@ -418,6 +424,12 @@ ul {
     width: 32px;
 }
 
+@media screen and (max-width: 956px) {
+    #dogs-footer-image {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 936px) {
     #home img {
         position: static;
@@ -425,10 +437,15 @@ ul {
         margin: auto;
         margin-top: 20px;
     }
+    #about h1 {
+        margin-top: 100px;
+    }
     .home__message {
         text-align: center;
         margin: auto;
         margin-top: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
@@ -452,6 +469,13 @@ ul {
     }
     .home__title h2 {
         font-size: 1rem;
+    }
+    .home__message {
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+    .about__text {
+        margin-left: 0px;
     }
 }
 
