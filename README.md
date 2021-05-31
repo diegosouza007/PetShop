@@ -9,8 +9,8 @@ Como o site é referente a uma empresa que trabalha no ramo de PetShop, a ideia 
 ## Tecnologias usadas
 
 <p float="left">
-  <img src="./assets/img/icons-html-5.svg" alt="HTML">
-  <img src="./assets/img/icons-css3.svg" alt="CSS">
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="./assets/img/icons-html-5.svg" alt="HTML"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"><img src="./assets/img/icons-css3.svg"></a>
 </p>
 
 ## Preview
